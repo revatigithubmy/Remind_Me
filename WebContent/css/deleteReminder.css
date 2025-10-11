@@ -1,0 +1,36 @@
+:root {
+  --beige: #f9f1e7;
+  --deep-brown: #5b2c2c;
+  --accent-pink: #b47b6c;
+  --radius: 0.7rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background: var(--beige);
+  color: var(--deep-brown);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--deep-brown);
+}
+
+p {
+  font-size: 1rem;
+  color: var(--accent-pink);
+  margin-top: 10px;
+}

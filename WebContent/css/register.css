@@ -1,0 +1,106 @@
+:root {
+  --beige: #f9f1e7;
+  --deep-brown: #5b2c2c;
+  --accent-pink: #b47b6c;
+  --white: #ffffff;
+  --radius: 0.7rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background: var(--beige);
+  color: var(--deep-brown);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: var(--deep-brown);
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: var(--accent-pink);
+  text-align: center;
+}
+
+form {
+  background: var(--white);
+  padding: 30px 25px;
+  border-radius: var(--radius);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  background: var(--beige);
+  border: 2px solid var(--deep-brown);
+  color: var(--deep-brown);
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: #7a4a4a;
+  opacity: 1;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: var(--accent-pink);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(180, 123, 108, 0.2);
+}
+
+input[type="submit"] {
+  background: var(--accent-pink);
+  color: var(--white);
+  border: none;
+  padding: 12px 20px;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background: var(--deep-brown);
+}
+
+a {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: var(--deep-brown);
+  font-size: 0.95rem;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--accent-pink);
+}

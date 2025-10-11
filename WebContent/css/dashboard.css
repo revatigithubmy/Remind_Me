@@ -1,0 +1,65 @@
+:root {
+  --beige: #f9f1e7;
+  --deep-brown: #5b2c2c;
+  --accent-pink: #b47b6c;
+  --white: #ffffff;
+  --radius: 0.7rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background: var(--beige);
+  color: var(--deep-brown);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: var(--accent-pink);
+  margin: 20px 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+a {
+  display: block;
+  background: var(--white);
+  border: 2px solid var(--deep-brown);
+  color: var(--deep-brown);
+  padding: 12px 20px;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-size: 1rem;
+  width: 220px;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+a:hover {
+  background: var(--accent-pink);
+  color: var(--white);
+  transform: translateY(-2px);
+}
